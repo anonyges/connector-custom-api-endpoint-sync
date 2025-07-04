@@ -9,8 +9,8 @@ FortiSOAR connector to get synchonous Custom Api Endpoint
 3. Call the connector with the below curl command
 
 ```shell
-curl -X POST 'https://{your_domain_here}:port/api/integration/execute/?format=json' \
--H "Authorization: API-KEY {{API_KEY}}" \
+curl -X POST 'https://{your_domain_here}:{port}/api/integration/execute/?format=json' \
+-H "Authorization: API-KEY {API_KEY}" \
 -H "Content-Type: application/json;charset=UTF-8" \
 -H "Accept: application/json, text/plain, */*" \
 --insecure \
@@ -30,8 +30,8 @@ curl -X POST 'https://{your_domain_here}:port/api/integration/execute/?format=js
 or
 
 ```shell
-curl -X POST 'https://{your_domain_here}:port/api/integration/execute/?format=json' \
--H "Authorization: API-KEY {{API_KEY}}" \
+curl -X POST 'https://{your_domain_here}:{port}/api/integration/execute/?format=json' \
+-H "Authorization: API-KEY {API_KEY}" \
 -H "Content-Type: application/json;charset=UTF-8" \
 -H "Accept: application/json, text/plain, */*" \
 --insecure \
