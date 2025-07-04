@@ -1,0 +1,78 @@
+{
+    "name": "custom-api-endpoint-sync",
+    "version": "1.0.0",
+    "label": "Custom API Endpoint Sync",
+    "description": "Provides Custom API Endpoint Sync",
+    "publisher": "anonyges@gmail.com",
+    "configuration": {
+        "fields": [
+            {
+                "title": "API Key",
+                "type": "password",
+                "name": "api_key",
+                "required": true,
+                "visible": true,
+                "editable": true
+            },
+            {
+                "title": "Verify SSL",
+                "type": "checkbox",
+                "name": "verify_ssl",
+                "required": false,
+                "visible": true,
+                "editable": true,
+                "value": false
+            }
+        ]
+    },
+    "operations": [
+        {
+            "operation": "custom_api_endpoint_sync_call",
+            "title": "Custom API Endpoint Sync call",
+            "description": "Makes API call to the given endpoint.",
+            "enabled": true,
+            "category": "",
+            "annotation": "",
+            "TEMPLATE_NOTE6": "--OUTPUT SCHEMA IS A SAMPLE RESPONSE FROM THIS CONNECTOR ACTION--",
+            "output_schema": {
+                "result": "",
+                "api_data": ""
+            },
+            "parameters": [
+                {
+                    "title": "custom api endpoint url",
+                    "type": "text",
+                    "name": "api_endpoint",
+                    "required": true,
+                    "visible": true,
+                    "editable": true,
+                    "value": "",
+                    "tooltip": "copy and paste from the custom api endpoint button"
+                },
+                {
+                    "title": "data",
+                    "type": "object",
+                    "name": "data",
+                    "required": false,
+                    "visible": true,
+                    "editable": true,
+                    "value": null,
+                    "tooltip": "same as requests library \"data\" will be converted to get in Body"
+                }
+            ],
+            "open": false
+        }
+    ],
+    "category": [
+        "Analytics and SIEM"
+    ],
+    "contributor": null,
+    "active": true,
+    "cs_compatible": true,
+    "system": false,
+    "playbook_collections": [],
+    "icon_small": "",
+    "icon_large": "",
+    "help_online": null,
+    "vendor_version": null
+}
